@@ -1,0 +1,33 @@
+options:
+  charset: utf8
+
+VoteQuestion:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    member_id: { type: integer(4), notnull: true }
+    title: { type: string(140), notnull: true, notnull: true}
+    body: { type: string }
+  relations:
+    Member: { onDelete: cascade }
+
+VoteQuestionOption:
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    vote_question_id: { type: integer(4), notnull: true }
+    body: { type: string(140), notnull: true }
+  relations:
+    VoteQuestion: { onDelete: cascade, foreignAlias: VoteQuestionOptions }
+
+VoteAnswer:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    member_id: { type: integer(4), notnull: true }
+    vote_question_id: { type: integer(4), notnull: true }
+    vote_question_option_id: { type: integer(4), notnull: true }
+    body: { type: string }
+  relations:
+    Member: { onDelete: cascade }
+    VoteQuestion: { onDelete: cascade, foreignAlias: VoteAnswers}
+    VoteQuestionOption: { onDelete: cascade, foreignAlias: VoteAnswers}

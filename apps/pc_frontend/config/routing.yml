@@ -1,0 +1,3 @@
+vote:
+  class: opVotePluginFrontendRouteCollection
+  options: { name: vote }
