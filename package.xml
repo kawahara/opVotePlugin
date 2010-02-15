@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>opVotePlugin</name>
+ <channel>plugins.openpne.jp</channel>
+ <summary>opVotePlugin</summary>
+ <description>opVotePlugin</description>
+ <lead>
+  <name>Shogo Kawahara</name>
+  <user>kawahara</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2010-02-06</date>
+ <time>04:40:33</time>
+ <version>
+  <release>0.9.0</release>
+  <api>0.9.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license>Apache</license>
+ <notes>
+First release.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="51778c0eb2218ffc3a5f707c877272c6" name="apps/pc_frontend/config/routing.yml" role="data" />
+   <file baseinstalldir="/" md5sum="1490b9af524e1d88841d076ae699b331" name="apps/pc_frontend/modules/vote/actions/actions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="31a9b416e4603892e50fc52658028ae8" name="apps/pc_frontend/modules/vote/config/security.yml" role="data" />
+   <file baseinstalldir="/" md5sum="808edd3d8d02f445a870d5922e90183e" name="apps/pc_frontend/modules/vote/templates/deleteConfirmSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="c1b49c8a52eecf8e5d5e72222796e686" name="apps/pc_frontend/modules/vote/templates/editSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="6321fd0d75b1fe01eb2987a5f4d1d750" name="apps/pc_frontend/modules/vote/templates/indexSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="388e0a53a706585a57770627bbd57f0b" name="apps/pc_frontend/modules/vote/templates/newSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="eae384145cbd824499aebba01725e01f" name="apps/pc_frontend/modules/vote/templates/showSuccess.php" role="data" />
+   <file baseinstalldir="/" md5sum="527344c689cf9d75cba09a5a6b8fe985" name="config/doctrine/schema.yml" role="data" />
+   <file baseinstalldir="/" md5sum="61049dcd91748c5ce1c1ecea668f1e7f" name="data/fixtures/001_navi.yml" role="data" />
+   <file baseinstalldir="/" md5sum="688f428f3f9d1572356bc35ed451d2b6" name="lib/actions/opVotePluginVoteActions.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="2571173cc300ceafa0a116f07016f160" name="lib/filter/doctrine/PluginVoteAnswerFormFilter.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="337d467d880e4068453ff92c55a986be" name="lib/filter/doctrine/PluginVoteQuestionFormFilter.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="41ccb34dcbb1f6cac920eb70d8b11960" name="lib/filter/doctrine/PluginVoteQuestionOptionFormFilter.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="e2facbda67f96d90bd8480de0b1af2ff" name="lib/form/doctrine/PluginVoteAnswerForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="4959eb05742c95810d3b4a7a5a6d7d36" name="lib/form/doctrine/PluginVoteQuestionForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="bca596e074100e0446b12010dd12b230" name="lib/form/doctrine/PluginVoteQuestionOptionForm.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="4db81cebda313e71bf418c667c896575" name="lib/model/doctrine/PluginVoteAnswer.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="1523fde497cc68f4e4fa04f6f41f2f66" name="lib/model/doctrine/PluginVoteAnswerTable.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="b0d39ab2d3154ac1fc935b0eeed76fcb" name="lib/model/doctrine/PluginVoteQuestion.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="c908925332a74a4d2d442c18a55113b6" name="lib/model/doctrine/PluginVoteQuestionOption.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="9e59dd15868084bc111cdfdbef8eedf9" name="lib/model/doctrine/PluginVoteQuestionOptionTable.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="c66e9617c1f8f74b3698a4efa12b5ff9" name="lib/model/doctrine/PluginVoteQuestionTable.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="8095bc32ed8695cdc735f64e66114f92" name="lib/routing/opVotePluginFrontendCollection.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="25b04d5e2306bbc79824f120dc88d181" name="test/bootstrap/database.php" role="data" />
+   <file baseinstalldir="/" md5sum="2089e76b9d0ae0fd4d222ee37ea68cb5" name="test/bootstrap/functional.php" role="data" />
+   <file baseinstalldir="/" md5sum="4bfa4b596e946c8a283410a2e2ba4315" name="test/bootstrap/unit.php" role="data" />
+   <file baseinstalldir="/" md5sum="8471fade12b0760fab6715ffb8b8f9e4" name="test/fixtures/test_data.yml" role="data" />
+   <file baseinstalldir="/" md5sum="8a98cacfcc151f2808c399543fd52679" name="test/functional/mobile_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="1faa199e87c1ce270e86edee706b37fd" name="test/functional/pc_frontend/skeletonActionsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="52440ab0abcc01c98551283f1e9942e1" name="test/unit/model/SkeletonTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.2.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-02-06</date>
+   <license>Apache</license>
+   <notes>
+First release.
+   </notes>
+  </release>
+ </changelog>
+</package>
