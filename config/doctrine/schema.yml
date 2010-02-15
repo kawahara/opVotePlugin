@@ -8,6 +8,7 @@ VoteQuestion:
     member_id: { type: integer(4), notnull: true }
     title: { type: string(140), notnull: true, notnull: true}
     body: { type: string }
+    public_flag: { type: integer(1), notnull: true, default: 1 }
   relations:
     Member: { onDelete: cascade }
 

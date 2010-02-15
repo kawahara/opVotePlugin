@@ -1,0 +1,4 @@
+SnsConfig:
+  opvoteplugin_current_revision:
+    name:  "opVotePlugin_revision"
+    value: 1
